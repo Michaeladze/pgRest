@@ -61,7 +61,7 @@
                 <configuration>
                     <appName>java-rest-101</appName>
                     <processTypes>
-                        <web>java -Dserver.port=$PORT $JAVA_OPTS -cp target/classes:target/m2e-wtp/*.jar com.pg.rest.Main</web>
+                        <web>java -Dserver.port=$PORT $JAVA_OPTS -cp target/classes:target/* com.pg.rest.Main</web>
                     </processTypes>
                 </configuration>
             </plugin>
