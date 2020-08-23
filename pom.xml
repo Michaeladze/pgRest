@@ -68,7 +68,7 @@
                 <configuration>
                     <appName>java-rest-101</appName>
                     <processTypes>
-                        <web>java -jar target/java-rest-0.0.1-SNAPSHOT.jar</web>
+                        <web>java -jar target/rest-0.0.1-SNAPSHOT.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
