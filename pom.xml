@@ -67,9 +67,9 @@
                 <version>3.0.3</version>
                 <configuration>
                     <appName>java-rest-101</appName>
-                    <processTypes>
-                        <web>java -jar target/rest-0.0.1-SNAPSHOT.jar</web>
-                    </processTypes>
+<!--                    <processTypes>-->
+<!--                        <web>java -jar target/rest-0.0.1-SNAPSHOT.jar</web>-->
+<!--                    </processTypes>-->
                 </configuration>
             </plugin>
         </plugins>
