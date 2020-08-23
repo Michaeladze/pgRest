@@ -61,7 +61,7 @@
                 <configuration>
                     <appName>java-rest-101</appName>
                     <processTypes>
-                        <web>java -jar target/rest-0.0.1-SNAPSHOT.jar</web>
+                        <web>java -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar</web>
                     </processTypes>
                 </configuration>
             </plugin>
