@@ -61,11 +61,8 @@
                 <configuration>
                     <appName>java-rest-101</appName>
                     <processTypes>
-                        <web>java -Dserver.port=$PORT $JAVA_OPTS -cp target/classes:target/* com.pg.rest.Main</web>
+                        <web>java -Dserver.port=8080 -jar target/rest-0.0.1-SNAPSHOT.jar</web>
                     </processTypes>
-                    <includes>
-                        <include>target/rest-0.0.1-SNAPSHOT.jar</include>
-                    </includes>
                 </configuration>
             </plugin>
         </plugins>
