@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.Optional;
 
 @Controller
@@ -23,7 +24,14 @@ public class RequestController {
     @GetMapping(path = "/all")
     public @ResponseBody
     Iterable<Request> getAllRequests(@RequestParam(value = "q", defaultValue = "") String query) {
-        return requestRepository.findAll();
+        Iterable<Request> list = requestRepository.findAll();
+        ArrayList<Request> result = new ArrayList<>();
+        list.forEach((Request request) -> {
+            if (request.getName().toLowerCase().contains(query.toLowerCase())) {
+                result.add(request);
+            }
+        });
+        return result;
     }
 
     @GetMapping(path = "/{id}")
